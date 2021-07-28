@@ -4,25 +4,14 @@ import com.rata.test.production.entities.Pembayaran;
 import com.rata.test.production.exception.ResourceNotFoundException;
 import com.rata.test.production.repositories.PembayaranRepository;
 import com.rata.test.production.services.PembayaranService;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service("pembayaranServiceImpl")
 public class PembayaranServiceImpl implements PembayaranService {
@@ -99,7 +88,7 @@ public class PembayaranServiceImpl implements PembayaranService {
         }
     }
 
-    private byte[] getImage(final byte[] image) throws IOException {
+    private byte[] getImage(final byte[] image) {
         if (image != null) {
             byte[] byteArray = new byte[image.length];
             int i = 0;

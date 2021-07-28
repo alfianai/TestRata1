@@ -1,24 +1,14 @@
 package com.rata.test.production.services.impl;
 
-import com.rata.test.production.entities.Barang;
-import com.rata.test.production.entities.Production;
 import com.rata.test.production.entities.ProductionStatus;
 import com.rata.test.production.exception.ResourceNotFoundException;
 import com.rata.test.production.repositories.ProductionRepository;
 import com.rata.test.production.repositories.ProductionStatusRepository;
 import com.rata.test.production.services.ProductionStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import javax.validation.Valid;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 @Service("productionStatusServiceImpl")
 public class ProductionStatusServiceImpl implements ProductionStatusService {

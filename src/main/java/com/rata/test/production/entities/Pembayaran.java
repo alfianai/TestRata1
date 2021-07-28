@@ -5,7 +5,6 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Lob;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import java.time.LocalDate;

@@ -2,7 +2,6 @@ package com.rata.test.production.controllers;
 
 import com.rata.test.production.entities.Pembayaran;
 import com.rata.test.production.exception.ResourceNotFoundException;
-import com.rata.test.production.repositories.PembayaranRepository;
 import com.rata.test.production.services.PembayaranService;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
