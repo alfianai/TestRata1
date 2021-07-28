@@ -1,10 +1,10 @@
 package com.rata.test.production.entities;
 
 import lombok.Data;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Lob;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import java.time.LocalDate;
@@ -18,7 +18,7 @@ public class Pembayaran extends Production {
     @Column(name = "metode_bayar")
     private String metodeBayar;
 
-    @Lob
+    @Type(type="org.hibernate.type.BinaryType")
     @Column(name = "bukti_bayar")
     private byte[] buktiBayar;
 

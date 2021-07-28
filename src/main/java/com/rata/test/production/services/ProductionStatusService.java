@@ -3,7 +3,6 @@ package com.rata.test.production.services;
 import com.rata.test.production.entities.ProductionStatus;
 import com.rata.test.production.exception.ResourceNotFoundException;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
